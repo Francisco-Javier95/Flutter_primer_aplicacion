@@ -13,12 +13,12 @@ class Screen3 extends StatelessWidget {
   };
 
   final Map<String, String> heroes = const {
-    'Sipderman': 'assets/imgs/iloveimg-converted/117+ Spider Man Wallpapers _ Free download _ Best Collection.png',
-    'Superman': 'assets/imgs/iloveimg-converted/Batman Profile Rain Dark Blue Desktop Wallpaper',
-    'Batman': 'assets/imgs/iloveimg-converted/descarga (3).png',
-    'Loki': 'assets/imgs/iloveimg-converted/Disney Lovers! • Instagram.png',
-    'Ironman': 'assets/imgs/iloveimg-converted/Iron Man.png',
-    'Daredavil': 'assets/imgs/iloveimg-converted/daredavil (arifinity_) on X.png'
+    'Sipderman': 'assets/imgs/iloveimg-converted/spiderman.png',
+    'Superman': 'assets/imgs/iloveimg-converted/superman.png',
+    'Batman': 'assets/imgs/iloveimg-converted/batman.png',
+    'Loki': 'assets/imgs/iloveimg-converted/loki.png',
+    'Ironman': 'assets/imgs/iloveimg-converted/Ironman.png',
+    'Daredavil': 'assets/imgs/iloveimg-converted/daredavil.png'
   };
 
   // final dogs = const[
@@ -57,7 +57,7 @@ class Screen3 extends StatelessWidget {
           Divider(),
 
           ...heroes.entries.map((heroes){
-            return _tileGustos(
+            return _tileHeroes(
               heroes.key, 
               heroes.value, 
               Color.fromARGB(255, 1, 14, 51), 
@@ -84,6 +84,30 @@ class Screen3 extends StatelessWidget {
       leading: Image.asset(gustoImage, width: 50, height: 50),
       title: Text(gustoName),
       subtitle: Text("Me encanta Vegetta777"),
+      trailing: Icon(Icons.arrow_forward),
+      tileColor: tileColor,
+      iconColor: iconColor,
+      textColor: textColor,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12)
+      )
+    );
+
+    final espacio = SizedBox(height: 10);
+
+    return Column(
+      children: [
+        tile,
+        espacio
+      ],
+    );
+  }
+
+  Widget _tileHeroes(String heroeName, String hereoImage, Color tileColor, Color iconColor, Color textColor){
+    final tile = ListTile(
+      leading: Icon(Icons.movie),
+      title: Image.asset(hereoImage, width: 50, height: 50),
+      subtitle: Text(heroeName),
       trailing: Icon(Icons.arrow_forward),
       tileColor: tileColor,
       iconColor: iconColor,
