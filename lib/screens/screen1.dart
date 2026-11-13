@@ -21,6 +21,7 @@ class Screen1 extends StatelessWidget {
           backgroundColor: Colors.purple
         ),
         body: Container(
+          width: 5000,
           color: Color.fromARGB(119, 210, 51, 7),
           child: Column(
             children: <Widget>[
