@@ -2,6 +2,7 @@ import 'package:aplicacion_1_3/screens/screen2.dart';
 import 'package:aplicacion_1_3/screens/screen3.dart';
 import 'package:aplicacion_1_3/screens/screen4.dart';
 import 'package:aplicacion_1_3/screens/screen5.dart';
+import 'package:aplicacion_1_3/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class Screen1 extends StatelessWidget {
@@ -15,10 +16,8 @@ class Screen1 extends StatelessWidget {
       Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Pantalla 1',
-            style: TextStyle(color: Colors.white),
-          ),
-          backgroundColor: Colors.purple
+            'Pantalla 1'
+          )
         ),
         body: Container(
           width: 5000,
@@ -27,7 +26,7 @@ class Screen1 extends StatelessWidget {
             children: <Widget>[
               Text(
                 'Selecciona una opción',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: AppTheme.lightTheme.textTheme.headlineLarge,
               ),
               SizedBox(height: 20),
               boton(

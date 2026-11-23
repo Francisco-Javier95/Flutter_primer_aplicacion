@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^9.0.0
 
 dev_dependencies:
   flutter_test:
@@ -34,3 +35,25 @@ flutter:
     - assets/imgs/iloveimg-converted/Ironman.png
     - assets/imgs/iloveimg-converted/loki.png
     - assets/imgs/iloveimg-converted/daredavil.png
+
+  fonts:
+    - family: Comfortaa
+      fonts:
+        - asset: assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf
+          weight: 400
+
+    - family: IndieFlower
+      fonts:
+        - asset: assets/fonts/Indie_Flower/IndieFlower-Regular.ttf
+          weight: 400
+
+    - family: Playfair_Display
+      fonts:
+        - asset: assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf
+        - asset: assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf
+          weight: 400
+
+    - family: Creepster
+      fonts:
+        - asset: assets/fonts/Creepster/Creepster-Regular.ttf
+          weight: 400
